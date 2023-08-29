@@ -21,6 +21,8 @@
  ;; If there is more than one, they won't work right.
  '(default ((t (:family "Iosevka" :foundry "outline" :slant normal :weight normal :height 143 :width normal)))))
 
+(global-set-key (kbd "C-ü") 'comment-region)
+(global-set-key (kbd "C-ä") 'uncomment-region)
 (global-set-key (kbd "M-k") 'hs-hide-block)
 (global-set-key (kbd "M-j") 'hs-show-block)
 (global-set-key [(M p)] 'replace-string)
@@ -37,3 +39,6 @@
 (global-set-key (kbd "M-ä") 'revert-buffer-no-confirm)
 (global-set-key (kbd "C-u") 'next-error)
 (show-paren-mode 1)
+
+(setq scroll-step            1
+      scroll-conservatively  10000)
