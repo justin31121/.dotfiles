@@ -21,7 +21,7 @@
  ;; If there is more than one, they won't work right.
  '(default ((t (:family "Iosevka" :foundry "outline" :slant normal :weight normal :height 143 :width normal)))))
 
-
+(setq make-backup-files nil)
 
 (global-set-key (kbd "C-ü") 'comment-region)
 (global-set-key (kbd "C-ä") 'uncomment-region)
@@ -29,7 +29,8 @@
 (global-set-key (kbd "M-j") 'hs-show-block)
 (global-set-key [(M p)] 'replace-string)
 
-(display-line-numbers-mode 1)
+
+(global-display-line-numbers-mode 1)
 (electric-pair-mode 1)
 
 (defun revert-buffer-no-confirm ()
